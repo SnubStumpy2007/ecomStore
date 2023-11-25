@@ -4,7 +4,14 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 function App() {
   return (
-    <h1>Hi</h1>
+    <div className='App'>
+      <Router>
+        <Routes>
+          <Routes path='/' />
+          <Routes path='/cart' />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
