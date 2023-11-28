@@ -13,7 +13,7 @@ function getDefaultCart(){
 }
 
 export const ShopContextProvider = (props) => {
-    const [cartItems, setCartItems] = useState()
+    const [cartItems, setCartItems] = useState(getDefaultCart())
     return (
         <ShopContext.Provider>{props.children}</ShopContext.Provider>
     )
