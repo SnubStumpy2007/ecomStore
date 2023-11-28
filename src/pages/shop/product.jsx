@@ -9,6 +9,7 @@ const {id, productName, price, productImage} = props.data;
             <img src={productImage}/>
             <p><b>{productName}</b></p>
             <p>${price}</p>
+            <button className="addToCartBttn">Add To Cart</button>
         </div>
     )
 }
