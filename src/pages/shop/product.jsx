@@ -4,7 +4,12 @@ function Product(props) {
 const {id, productName, price, productImage} = props.data;
 
     return(
-        <div>{productName}</div>
+        <div className="product">
+            {" "}
+            <img src={productImage}/>
+            <p><b>{productName}</b></p>
+            <p>${price}</p>
+        </div>
     )
 }
 
