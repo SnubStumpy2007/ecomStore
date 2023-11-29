@@ -13,7 +13,7 @@ function Cart() {
             <div className="cartItems">
                 {PRODUCTS.map((product) => {
                     if(cartItems[product.id] !== 0) {
-                        return <CartItem data={product}/>
+                        return <cartItems data={product}/>
                     }
                 })}
             </div>
