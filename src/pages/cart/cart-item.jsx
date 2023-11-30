@@ -16,12 +16,6 @@ function CartItem(props){
                 <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
                 <button onClick={() => addToCart(id)}>+</button>
             </div>
-
-            <div className="checkout">
-                <p>subtotal: $</p>
-                <button>Continue Shopping</button>
-                <button>Checkout</button>
-            </div>
         </div>
     </div>
     )
