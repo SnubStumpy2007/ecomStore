@@ -51,7 +51,7 @@ export const PRODUCTS =[
         productImage: product7,
     },
     {
-        id: 1,
+        id: 8,
         productName: "Don't trip hat",
         price: 30.0,
         productImage: product8,
