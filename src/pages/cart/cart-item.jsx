@@ -13,8 +13,14 @@ function CartItem(props){
             <p>${price}</p>
             <div className="countHandler">
                 <button onClick={() => removeFromCart(id)}>-</button>
-                <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value))} />
+                <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
                 <button onClick={() => addToCart(id)}>+</button>
+            </div>
+
+            <div className="checkout">
+                <p>subtotal: $</p>
+                <button>Continue Shopping</button>
+                <button>Checkout</button>
             </div>
         </div>
     </div>
